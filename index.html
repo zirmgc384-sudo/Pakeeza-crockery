@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="پاکیزہ کراکری — زیدہ، ایس بی خان مارکیٹ، صوابی۔ کراکری، ڈنر سیٹس، ٹی سیٹس، کچن اور شادی جہیز کا سامان۔">
+<title>پاکیزہ کراکری | Pakeeza Crockery</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;600;700&family=Amiri:wght@400;700&display=swap');
+:root{--green:#075c4d;--green2:#0b7561;--gold:#b98524;--cream:#fbf7ef;--ink:#183b34;--muted:#6f7975;--white:#fff;}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--cream);color:var(--ink);font-family:"Noto Naskh Arabic",Tahoma,Arial,sans-serif}
+a{text-decoration:none;color:inherit}
+.top{background:var(--green);color:#fff;padding:8px 5%;font-size:14px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.header{background:#fff;padding:16px 5%;display:flex;align-items:center;gap:24px;position:sticky;top:0;z-index:20;box-shadow:0 2px 18px #153e3420}
+.brand{display:flex;align-items:center;gap:12px;min-width:max-content}
+.logo{width:58px;height:58px;border-radius:50%;border:3px solid var(--gold);display:grid;place-items:center;background:var(--cream);font-size:28px}
+.brand h1{margin:0;color:var(--green);font-size:28px;line-height:1.1}
+.brand small{color:var(--gold);letter-spacing:2px;font-family:Arial,sans-serif}
+.search{flex:1;max-width:520px;margin:auto;position:relative}
+.search input{width:100%;border:1px solid #ddd;border-radius:30px;padding:13px 48px 13px 18px;font-size:15px;font-family:inherit;outline:none}
+.search span{position:absolute;right:18px;top:8px;font-size:22px}
+.nav{background:var(--green);color:#fff;padding:10px 5%;display:flex;gap:8px;overflow:auto;white-space:nowrap}
+.nav a{padding:7px 14px;border-radius:20px;font-weight:600}
+.nav a:hover{background:#ffffff18}
+.hero{max-width:1200px;margin:28px auto;padding:0 18px}
+.hero-box{background:linear-gradient(120deg,#064f44,#0a6d5b);border-radius:28px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;min-height:390px;box-shadow:0 18px 45px #0a554220}
+.hero-copy{padding:50px;color:#fff;display:flex;flex-direction:column;justify-content:center}
+.eyebrow{color:#f2d18a;font-weight:700;font-size:17px}
+.hero h2{font-family:Amiri,"Noto Naskh Arabic",serif;font-size:48px;line-height:1.15;margin:10px 0}
+.hero p{font-size:19px;color:#e6f1ed;max-width:520px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.btn{padding:12px 22px;border-radius:28px;font-weight:700}
+.btn.gold{background:#d6a744;color:#1c352e}
+.btn.light{background:#fff;color:var(--green)}
+.hero-art{min-height:390px;background:radial-gradient(circle at 50% 45%,#fff7 0 16%,transparent 17%),linear-gradient(145deg,#f4e9d3,#d8c39d);display:grid;place-items:center;position:relative}
+.hero-art .dish{font-size:130px;filter:drop-shadow(0 18px 15px #50351633)}
+.hero-art .note{position:absolute;bottom:22px;right:22px;background:#fffdf8dd;padding:8px 15px;border-radius:20px;color:var(--green);font-weight:700}
+.section{max-width:1200px;margin:46px auto;padding:0 18px}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:18px}
+.section h2{font-size:30px;margin:0;color:var(--green)}
+.section-head p{margin:4px 0;color:var(--muted)}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.feature{background:#fff;border:1px solid #eadfcd;border-radius:18px;padding:18px;text-align:center}
+.feature b{display:block;font-size:17px;color:var(--green)}
+.feature span{font-size:28px}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.product{background:#fff;border:1px solid #eadfcd;border-radius:22px;overflow:hidden;box-shadow:0 8px 25px #1e3f3510;transition:.2s}
+.product:hover{transform:translateY(-3px);box-shadow:0 14px 30px #1e3f3518}
+.photo{height:250px;background:#f6f0e5;display:grid;place-items:center;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.product-body{padding:18px}
+.tag{display:inline-block;background:#f7ead0;color:#8a5e16;border-radius:20px;padding:3px 10px;font-size:12px}
+.product h3{margin:9px 0 4px;font-size:22px;color:var(--green)}
+.product p{color:var(--muted);margin:0 0 15px;min-height:45px}
+.wa{display:block;text-align:center;background:var(--green2);color:#fff;border-radius:14px;padding:12px;font-weight:700}
+.categories{display:flex;gap:10px;overflow:auto;padding-bottom:6px}
+.cat{min-width:145px;background:#fff;border:1px solid #eadfcd;border-radius:18px;padding:16px;text-align:center}
+.cat .ico{font-size:30px}
+.about{background:#fff;border:1px solid #eadfcd;border-radius:24px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.about h3{color:var(--green);font-size:25px;margin-top:0}
+.contact{background:var(--green);color:#fff;border-radius:26px;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.contact h2{color:#f2d18a}
+.contact .big{font-size:24px;font-weight:700}
+footer{margin-top:50px;background:#073f36;color:#dceae6;padding:28px 5%;text-align:center}
+.floating{position:fixed;left:18px;bottom:18px;background:#1aa46e;color:#fff;border-radius:50px;padding:12px 18px;font-weight:700;box-shadow:0 8px 25px #0003;z-index:30}
+@media(max-width:850px){
+ .header{flex-wrap:wrap;gap:12px} .search{order:3;flex-basis:100%;max-width:none}
+ .hero-box{grid-template-columns:1fr} .hero-art{min-height:230px} .hero-copy{padding:35px 25px} .hero h2{font-size:40px}
+ .features{grid-template-columns:repeat(2,1fr)} .products{grid-template-columns:repeat(2,1fr)} .about,.contact{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+ .top{font-size:12px} .brand h1{font-size:23px} .logo{width:50px;height:50px} 
+ .hero{margin-top:16px} .hero-box{border-radius:20px} .hero-copy{padding:28px 20px} .hero h2{font-size:35px}
+ .products{grid-template-columns:1fr 1fr;gap:10px} .photo{height:175px} .product-body{padding:12px}
+ .product h3{font-size:17px} .product p{font-size:13px;min-height:55px} .wa{font-size:13px;padding:10px 5px}
+ .section h2{font-size:25px} .features{gap:8px}
+}
+</style>
+</head>
+<body>
+<div class="top">
+  <span>📍 زیدہ، ایس بی خان مارکیٹ، صوابی</span>
+  <span>💬 WhatsApp: 0300-9080384</span>
+</div>
+
+<header class="header">
+  <a class="brand" href="#home">
+    <div class="logo">☕</div>
+    <div><h1>پاکیزہ کراکری</h1><small>PAKEEZA CROCKERY</small></div>
+  </a>
+  <div class="search"><span>🔎</span><input id="search" type="search" placeholder="کسی بھی پروڈکٹ کو تلاش کریں..."></div>
+  <a class="btn gold" href="https://wa.me/923009080384?text=السلام علیکم، پاکیزہ کراکری سے خریداری کے لیے رابطہ کرنا ہے۔" target="_blank">WhatsApp</a>
+</header>
+
+<nav class="nav">
+  <a href="#home">🏠 ہوم</a><a href="#products">تمام مصنوعات</a><a href="#categories">شادی اور جہیز</a>
+  <a href="#categories">ڈنر سیٹ</a><a href="#categories">کچن سیٹ</a><a href="#contact">رابطہ کریں</a>
+</nav>
+
+<main id="home">
+<section class="hero">
+ <div class="hero-box">
+  <div class="hero-copy">
+    <div class="eyebrow">گھر کی خوبصورتی، آپ کی پسند</div>
+    <h2>پاکیزہ کراکری</h2>
+    <p>کراکری، کچن ویئر، گفٹ سیٹس اور شادی و جہیز کا خوبصورت سامان — اپنی پسند کی چیز دیکھیں اور WhatsApp پر قیمت پوچھیں۔</p>
+    <div class="cta"><a class="btn gold" href="#products">پروڈکٹس دیکھیں</a><a class="btn light" href="https://wa.me/923009080384?text=السلام علیکم، مجھے پاکیزہ کراکری کی مصنوعات دیکھنی ہیں۔" target="_blank">WhatsApp پر رابطہ</a></div>
+  </div>
+  <div class="hero-art"><div class="dish">🍽️</div><div class="note">معیاری سامان • مناسب قیمت</div></div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="features">
+  <div class="feature"><span>⭐</span><b>معیاری مصنوعات</b><small>اچھے انتخاب کے ساتھ</small></div>
+  <div class="feature"><span>🏷️</span><b>مناسب قیمت</b><small>قیمت WhatsApp پر معلوم کریں</small></div>
+  <div class="feature"><span>💬</span><b>آسان آرڈر</b><small>براہِ راست WhatsApp رابطہ</small></div>
+  <div class="feature"><span>🏠</span><b>گھر کی ضرورت</b><small>کروکری اور کچن سامان</small></div>
+ </div>
+</section>
+
+<section class="section" id="categories">
+ <div class="section-head"><div><h2>مشہور کیٹیگریز</h2><p>اپنی ضرورت کے مطابق سامان منتخب کریں</p></div></div>
+ <div class="categories">
+  <div class="cat"><div class="ico">🍽️</div><b>ڈنر سیٹس</b></div>
+  <div class="cat"><div class="ico">☕</div><b>ٹی سیٹس</b></div>
+  <div class="cat"><div class="ico">🥛</div><b>گلاس اور جگ</b></div>
+  <div class="cat"><div class="ico">🍳</div><b>کچن ویئر</b></div>
+  <div class="cat"><div class="ico">🎁</div><b>شادی و جہیز</b></div>
+  <div class="cat"><div class="ico">🫖</div><b>گفٹ سیٹس</b></div>
+  <div class="cat"><div class="ico">🏺</div><b>ٹرے اور سرونگ</b></div>
+ </div>
+</section>
+
+<section class="section" id="products">
+ <div class="section-head"><div><h2>نمایاں مصنوعات</h2><p>تصویر دیکھیں، پھر WhatsApp پر قیمت اور دستیابی پوچھیں</p></div></div>
+ <div class="products" id="productGrid">
+ 
+      <article class="product" data-name="پلاسٹک جگ اور گلاس سیٹ">
+        <div class="photo"><img src="images/1000188659.jpg" alt="پلاسٹک جگ اور گلاس سیٹ" loading="lazy"></div>
+        <div class="product-body">
+          <span class="tag">اصل پروڈکٹ</span>
+          <h3>پلاسٹک جگ اور گلاس سیٹ</h3>
+          <p>گھر کے استعمال کے لیے خوبصورت جگ اور گلاس سیٹ</p>
+          <a class="wa" href="https://wa.me/923009080384?text=السلام علیکم، مجھے پلاسٹک جگ اور گلاس سیٹ کی قیمت اور دستیابی بتا دیں۔" target="_blank" rel="noopener">WhatsApp پر قیمت پوچھیں</a>
+        </div>
+      </article>
+    
+      <article class="product" data-name="کلک لگژری 6 پیس گفٹ پیک">
+        <div class="photo"><img src="images/1000188660.jpg" alt="کلک لگژری 6 پیس گفٹ پیک" loading="lazy"></div>
+        <div class="product-body">
+          <span class="tag">اصل پروڈکٹ</span>
+          <h3>کلک لگژری 6 پیس گفٹ پیک</h3>
+          <p>خوبصورت گفٹ پیک — شادی اور تحفے کے لیے بہترین انتخاب</p>
+          <a class="wa" href="https://wa.me/923009080384?text=السلام علیکم، مجھے کلک لگژری 6 پیس گفٹ پیک کی قیمت اور دستیابی بتا دیں۔" target="_blank" rel="noopener">WhatsApp پر قیمت پوچھیں</a>
+        </div>
+      </article>
+    
+      <article class="product" data-name="اسٹیل جگ اور گلاس سیٹ">
+        <div class="photo"><img src="images/1000188655.jpg" alt="اسٹیل جگ اور گلاس سیٹ" loading="lazy"></div>
+        <div class="product-body">
+          <span class="tag">اصل پروڈکٹ</span>
+          <h3>اسٹیل جگ اور گلاس سیٹ</h3>
+          <p>مضبوط اور خوبصورت اسٹیل جگ اور گلاس سیٹ</p>
+          <a class="wa" href="https://wa.me/923009080384?text=السلام علیکم، مجھے اسٹیل جگ اور گلاس سیٹ کی قیمت اور دستیابی بتا دیں۔" target="_blank" rel="noopener">WhatsApp پر قیمت پوچھیں</a>
+        </div>
+      </article>
+    
+      <article class="product" data-name="گولڈ ڈیزائن گلاس سیٹ">
+        <div class="photo"><img src="images/1000188656.jpg" alt="گولڈ ڈیزائن گلاس سیٹ" loading="lazy"></div>
+        <div class="product-body">
+          <span class="tag">اصل پروڈکٹ</span>
+          <h3>گولڈ ڈیزائن گلاس سیٹ</h3>
+          <p>خوبصورت گولڈ ڈیزائن کے ساتھ گلاس سیٹ</p>
+          <a class="wa" href="https://wa.me/923009080384?text=السلام علیکم، مجھے گولڈ ڈیزائن گلاس سیٹ کی قیمت اور دستیابی بتا دیں۔" target="_blank" rel="noopener">WhatsApp پر قیمت پوچھیں</a>
+        </div>
+      </article>
+    
+      <article class="product" data-name="گلاس جگ سیٹ">
+        <div class="photo"><img src="images/1000188658.jpg" alt="گلاس جگ سیٹ" loading="lazy"></div>
+        <div class="product-body">
+          <span class="tag">اصل پروڈکٹ</span>
+          <h3>گلاس جگ سیٹ</h3>
+          <p>روزمرہ استعمال کے لیے خوبصورت گلاس جگ سیٹ</p>
+          <a class="wa" href="https://wa.me/923009080384?text=السلام علیکم، مجھے گلاس جگ سیٹ کی قیمت اور دستیابی بتا دیں۔" target="_blank" rel="noopener">WhatsApp پر قیمت پوچھیں</a>
+        </div>
+      </article>
+    
+      <article class="product" data-name="ٹی سیٹ اسٹینڈ کے ساتھ">
+        <div class="photo"><img src="images/1000188657.jpg" alt="ٹی سیٹ اسٹینڈ کے ساتھ" loading="lazy"></div>
+        <div class="product-body">
+          <span class="tag">اصل پروڈکٹ</span>
+          <h3>ٹی سیٹ اسٹینڈ کے ساتھ</h3>
+          <p>چائے کے لیے خوبصورت ٹی سیٹ، اسٹینڈ کے ساتھ</p>
+          <a class="wa" href="https://wa.me/923009080384?text=السلام علیکم، مجھے ٹی سیٹ اسٹینڈ کے ساتھ کی قیمت اور دستیابی بتا دیں۔" target="_blank" rel="noopener">WhatsApp پر قیمت پوچھیں</a>
+        </div>
+      </article>
+    
+ </div>
+ <div id="noResults" style="display:none;text-align:center;padding:30px;color:#6f7975">اس نام کی پروڈکٹ نہیں ملی۔</div>
+</section>
+
+<section class="section">
+ <div class="about">
+  <div><h3>پاکیزہ کراکری کے بارے میں</h3><p>ہم گھریلو استعمال، شادی و جہیز اور کچن کی ضرورت کے لیے مختلف قسم کی کراکری اور ہاؤس ہولڈ آئٹمز پیش کرتے ہیں۔ ویب سائٹ پر دستیاب اصل مصنوعات دیکھیں اور قیمت کے لیے WhatsApp پر رابطہ کریں۔</p></div>
+  <div><h3>مزید سامان</h3><p>واٹر بوتلز، تھرمس، الیکٹرک لیمپ، فینسی ٹرے، فوٹو فریم، ڈرائی فروٹ ٹرے، پریشر ککر، واٹر سیٹس، اسکول ٹفن، اسپون سیٹس، پتیلا سیٹس، فرائنگ پین، توا اور دیگر گھریلو سامان۔</p></div>
+ </div>
+</section>
+
+<section class="section" id="contact">
+ <div class="contact">
+  <div><h2>رابطہ کریں</h2><p>پروڈکٹ کی قیمت، دستیابی یا آرڈر کے لیے WhatsApp پر پیغام بھیجیں۔</p><div class="big">0300-9080384</div><p>📍 پاکیزہ کراکری، زیدہ، ایس بی خان مارکیٹ، صوابی</p></div>
+  <div style="display:flex;align-items:center;justify-content:center"><a class="btn gold" href="https://wa.me/923009080384?text=السلام علیکم، پاکیزہ کراکری سے آرڈر/قیمت کے بارے میں معلومات چاہیے۔" target="_blank">💬 WhatsApp پر آرڈر/قیمت پوچھیں</a></div>
+ </div>
+</section>
+</main>
+
+<a class="floating" href="https://wa.me/923009080384?text=السلام علیکم، پاکیزہ کراکری سے رابطہ کرنا ہے۔" target="_blank">💬 WhatsApp</a>
+<footer>© 2026 پاکیزہ کراکری — PAKEEZA CROCKERY</footer>
+
+<script>
+const input=document.getElementById('search');
+const cards=[...document.querySelectorAll('.product')];
+const no=document.getElementById('noResults');
+input.addEventListener('input',()=>{
+ const q=input.value.trim().toLowerCase();
+ let n=0;
+ cards.forEach(c=>{const ok=(c.dataset.name||'').toLowerCase().includes(q);c.style.display=ok?'':'none';if(ok)n++;});
+ no.style.display=n?'none':'block';
+});
+</script>
+</body>
+</html>
